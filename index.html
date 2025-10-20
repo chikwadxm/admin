@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
+    <script
+      src="https://kit.fontawesome.com/9969d36fcf.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body class="flex min-h-screen bg-gray-100">
+    <section class="w-64 bg-white min-h-screen">
+      <div class="py-4 px-4 m-4 fobt-bold text-2xl border-b">AdminPanel</div>
+      <p class="m-4 text-gray-700 hover:text-blue-600 hover:font-semibold block">Dashboard</p>
+      <p class=" text-gray-700 hover:text-blue-600 hover:font-semibold block  m-4">Orders</p>
+      <p class="m-4 text-gray-700 hover:text-blue-600 hover:font-semibold block">Products</p>
+      <p class="m-4 text-gray-700 hover:text-blue-600 hover:font-semibold block">Customers</p>
+      <p class="m-4 text-gray-700 hover:text-blue-600 hover:font-semibold block">Settings</p>
+    </section>
+    <main class="flex-1 p-6">
+      <header class="flex items-center justify-between">
+        <input
+          type="text"
+          placeholder="Search..."
+          class="border border-gray-400 text-sm px-3 py-1 w-1/3 rounded"
+        />
+        <div class="flex items-center gap-4">
+          <i class="fa-solid fa-user"></i>
+          <i class="fa-solid fa-bell"></i>
+        </div>
+      </header>
+      <section class="grid grid-cols-4 mb-6 gap-4 p-6">
+        <div class="bg-white w-30 rounded text-center hover:shadow">
+          <p class="text-gray-500 text-sm p-2">Total Sales</p>
+          <p class="font-bold p-2 text-2xl">$23,000</p>
+        </div>
+        <div class="bg-white w-30 rounded hover:shadow text-center">
+          <p class="text-gray-500 text-sm p-2">Orders</p>
+          <p class="font-bold p-2 text-2xl">182</p>
+        </div>
+        <div class="bg-white w-30 hover:shadow rounded text-center">
+          <p class="text-gray-500 text-sm p-2">Products</p>
+          <p class="font-bold p-2 text-2xl">54</p>
+        </div>
+        <div class="bg-white w-30 hover:shadow rounded text-center">
+          <p class="text-gray-500 text-sm p-2">Customers</p>
+          <p class="font-bold p-2 text-2xl">320</p>
+        </div>
+      </section>
+      <section class=" bg-slate-200 rounded p-4 shadow">
+        <div class="flex mb-6 justify-between">
+          <p class="font-semibold text-2xl">Products</p>
+          <button class="bg-blue-600 font-semibold text-white rounded py-1 px-2">+ Add Product</button>
+        </div>
+        <table class="w-full border-collapse text-left">
+          <thead>
+            <tr class="border-b">
+              <th>Image</th>
+              <th>Name</th>
+              <th>Category</th>
+              <th>Place</th>
+              <th>Stock</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-b hover:bg-gray-50">
+              <td>
+                <img src="src/two.JPG" class="h-30 m-2 rounded" />
+              </td>
+              <td>Sneakers</td>
+              <td>Men</td>
+              <td>$90</td>
+              <td>45</td>
+              <td>
+                <button class="text-blue-600 hover:underline hover:ml-2">Edit</button>
+              </td>
+            </tr>
+
+            <tr class="border-b hover:bg-gray-50">
+              <td>
+                <img src="src/three.JPG" class="h-30 m-2 rounded" />
+              </td>
+              <td>Sneakers</td>
+              <td>Men</td>
+              <td>$90</td>
+              <td>45</td>
+              <td>
+                <button class="text-blue-600 hover:underline hover:ml-2">Edit</button>
+              </td>
+            </tr>
+
+            <tr class="border-b hover:bg-gray-50">
+              <td>
+                <img src="src/one.JPG" class="h-30 m-2 rounded" />
+              </td>
+              <td>Sneakers</td>
+              <td>Men</td>
+              <td>$90</td>
+              <td>45</td>
+              <td>
+                <button class="text-red-500 hover:underline hover:ml-2">Delete</button>
+              </td>
+            </tr>
+            <tr class="border-b hover:bg-gray-50">
+              <td>
+                <img src="src/four.JPG" class="h-30 m-2 rounded" />
+              </td>
+              <td>Sneakers</td>
+              <td>Men</td>
+              <td>$90</td>
+              <td>45</td>
+              <td>
+                <button class="text-red-500 hover:underline hover:ml-2">Delete</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </body>
+</html>
